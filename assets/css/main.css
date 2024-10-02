@@ -3220,38 +3220,51 @@ input, select, textarea {
 
 	}
 
+/* Align text inside the carousel item */
+.carousel-item h3, .carousel-item p {
+	text-align: center; /* Center-align the text */
+	margin: 10px 0; /* Optional: Add some spacing between elements */
+}
 
 	
 	/* Carousel Container */
-	#carousel {
-		display: flex;
-		overflow-x: scroll;
-		scroll-snap-type: x mandatory;
-		scroll-behavior: smooth;
-		padding: 20px;
-	}
-	
-	/* Individual Carousel Items */
-	.carousel-item {
-		flex: 0 0 70%; /* Adjust the width as needed */
-		margin-right: 20px;
-		scroll-snap-align: center;
-		background: #fff;
-		border-radius: 10px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		transition: transform 0.3s ease-in-out;
-		position: relative;
-	}
-	
-	.carousel-item img, .carousel-item video {
-		max-width: 90%;
-		max-height: 300px;
-		border-radius: 10px;
-	}
+#carousel {
+	display: flex;
+	overflow-x: auto; /* Allow scrolling on smaller screens */
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	padding: 20px;
+	gap: 20px; /* Adjust spacing between items */
+}
+
+/* Individual Carousel Items */
+.carousel-item {
+	flex: 0 0 70%; /* Adjust width as needed */
+	scroll-snap-align: center;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: transform 0.3s ease-in-out;
+	position: relative;
+	padding: 15px; /* Add padding inside carousel item */
+}
+
+/* Styling for media elements (images, videos) */
+.carousel-item img, .carousel-item video {
+	max-width: 100%; /* Adjusted to fit the container width */
+	max-height: 300px;
+	border-radius: 10px;
+}
+
+/* Optional hover effect */
+.carousel-item:hover {
+	transform: scale(1.05);
+}
+
 	
 	/* Navigation Buttons */
 	.nav-buttons {
