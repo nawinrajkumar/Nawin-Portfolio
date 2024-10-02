@@ -17,7 +17,9 @@
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpeg" alt="" /></a>
-					<h1>I am <strong>Nawin Raj Kumar</strong>, <br />Machine Learning Researcher<br /></h1>
+					<h1>I am <strong>Nawin Raj Kumar,</strong></h1>
+					<h1>Machine Learning Researcher,</h1>
+					<h1>Kaggle Notebooks <strong>Expert,</strong></h1>
 					<h1>Co-Founder and Podcast Host, <strong>Inaiyaviyal.</strong></h1>
 				</div>
 			</header>
@@ -40,8 +42,82 @@
 						</ul>
 					</section>
 
-				<!-- Two -->
+					<!-- Notable Works
 					<section id="two">
+						<h2>Notable Works</h2>
+						<div class="row">
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images\Vehicle Data Analysis.mp4" class="image fit thumb"><video src="images\Vehicle Data Analysis.mp4" controls height="200px" width="auto"></video></a>
+								<h3>Vehicle Data Analysis using Numberplate</h3>
+								<p>Developed a Computer Vision based surveillance system to track and analyze the incoming vehicles using their Numberplate.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images\Wasmedge RUst.png" class="image fit thumb"><img src="images\Wasmedge RUst.png" alt="" /></a>
+								<h3>Interactive Chatbot using LLAMA-2 and WasmEdge</h3>
+								<p>An Interactive llama-2 based chatbot built on top of WasmEdge framework.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images\Football Data Analytics.png" class="image fit thumb"><img src="images\Football Data Analytics.png" alt="" /></a>
+								<h3>Football Event Detection</h3>
+								<p>Implemented a model to detect player collisions and events like tackles or passes during football matches using video data.</p>
+							</article>
+							<article class="col-6 col-12-xsmall work-item">
+								<a href="images/Generative-AI.png" class="image fit thumb"><img src="images/Generative-AI.png" alt="" /></a>
+								<h3><a href="https://github.com/nawinrajkumar/Generative-AI-Research">Generative AI Research</a></h3>
+								<p>Contributed to Generative AI research, exploring advancements in image generation and text-based models using LLMs.</p>
+							</article>
+						</div>
+					</section> -->
+					
+					<!-- Notable Works Section -->
+					<section id="two">
+						<h2>Notable Works</h2>
+					
+						<!-- Scroll Snap Carousel -->
+						<div id="carousel">
+							<!-- Carousel Item 1 -->
+							<article class="carousel-item" id="item-1">
+								<video src="images\Vehicle Data Analysis.mp4" controls></video>
+								<h3>Edge AI Deployment Video</h3>
+								<p>Video tutorial demonstrating the deployment of deep learning models on Nvidia Jetson using TensorRT and TensorFlow Lite.</p>
+							</article>
+					
+							<!-- Carousel Item 2 -->
+							<article class="carousel-item" id="item-2">
+								<img src="images\Wasmedge RUst.png" alt="Surveillance System">
+								<h3>Automated Surveillance System</h3>
+								<p>Built an Interactive Chatbot using llama-2 on Jetson Orin Nano using WasmEdge.</p>
+							</article>
+					
+							<!-- Carousel Item 3 -->
+							<article class="carousel-item" id="item-3">
+								<img src="images\Football Data Analytics.png" alt="Football Event Detection">
+								<h3>Football Event Detection</h3>
+								<p>Implemented a model to detect player collisions and events like tackles or passes during football matches using video data.</p>
+							</article>
+
+						</div>
+					
+						<!-- Navigation Buttons -->
+						<div class="nav-buttons">
+							<button onclick="scrollToItem('item-1')">1</button>
+							<button onclick="scrollToItem('item-2')">2</button>
+							<button onclick="scrollToItem('item-3')">3</button>
+							<!-- <button onclick="scrollToItem('item-4')">4</button> -->
+						</div>
+					</section>
+					
+					<!-- JavaScript for Scroll Navigation -->
+					<script>
+						// Function to scroll to specific carousel item
+						function scrollToItem(itemId) {
+							const item = document.getElementById(itemId);
+							item.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+						}
+					</script>
+					
+				<!-- Two -->
+					<section id="three">
 						<h2>Recent Work</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
@@ -56,15 +132,15 @@
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images\Lidar Mapping.png" class="image fit thumb"><img src="images\Lidar Mapping.png" alt="" /></a>
-								<h3><a href="https://github.com/nawinrajkumar/my_bot">Lidar and Depth Estimation using ROS-2.</h3>
+								<h3><a href="https://github.com/nawinrajkumar/my_bot">Lidar and Depth Estimation using ROS-2.</a></h3>
 								<p>Built SLAM and Depth camera estimation along with Turtle Bot Implementation using ROS-2	</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images\MARX-LLMs.png" class="image fit thumb"><img src="images\MARX-LLMs.png" alt="" /></a>
-								<h3>MARX-LLM Resource Repository</h3>
+								<h3><a href="https://github.com/Pragadesh-45/MarxLLM.git">Marx-LLM Open Source Resource Repository</a></h3>
 								<p>A Repository managed by <a href="https://github.com/Pragadesh-45">Pragadesh</a> where I contribured various resources related to LLMs and RAG.</p>
 							</article>
-							<article class="col-6 col-12-xsmall work-item">
+							<!-- <article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
 								<h3>Nunc enim commodo aliquet</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
@@ -73,14 +149,14 @@
 								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
 								<h3>Risus ornare lacinia</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
+							</article> -->
 						</div>
 						<ul class="actions">
 							<li><a href="#" class="button">Full Portfolio</a></li>
 						</ul>
 					</section>
 
-				<!-- Three -->
+				<!-- Three
 					<section id="three">
 						<h2>Get In Touch</h2>
 						<p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
@@ -116,7 +192,7 @@
 								</ul>
 							</div>
 						</div>
-					</section>
+					</section> -->
 
 				<!-- Four -->
 				<!--

@@ -3219,3 +3219,59 @@ input, select, textarea {
 			}
 
 	}
+
+
+	
+	/* Carousel Container */
+	#carousel {
+		display: flex;
+		overflow-x: scroll;
+		scroll-snap-type: x mandatory;
+		scroll-behavior: smooth;
+		padding: 20px;
+	}
+	
+	/* Individual Carousel Items */
+	.carousel-item {
+		flex: 0 0 70%; /* Adjust the width as needed */
+		margin-right: 20px;
+		scroll-snap-align: center;
+		background: #fff;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		transition: transform 0.3s ease-in-out;
+		position: relative;
+	}
+	
+	.carousel-item img, .carousel-item video {
+		max-width: 90%;
+		max-height: 300px;
+		border-radius: 10px;
+	}
+	
+	/* Navigation Buttons */
+	.nav-buttons {
+		display: flex;
+		justify-content: center;
+		margin: 20px 0;
+	}
+	
+	.nav-buttons button {
+		background: #333;
+		color: #fff;
+		border: none;
+		padding: 10px 20px;
+		cursor: pointer;
+		border-radius: 5px;
+		margin: 0 10px;
+		transition: background 0.2s ease-in-out;
+	}
+	
+	.nav-buttons button:hover {
+		background: #555;
+	}
+	
