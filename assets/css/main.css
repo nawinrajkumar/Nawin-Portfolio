@@ -2131,6 +2131,7 @@ input, select, textarea {
 
 			.image.fit img {
 				width: 100%;
+				height: 200px;
 			}
 
 		.image.avatar {
@@ -3223,7 +3224,7 @@ input, select, textarea {
 /* Align text inside the carousel item */
 .carousel-item h3, .carousel-item p {
 	text-align: center; /* Center-align the text */
-	margin: 10px 0; /* Optional: Add some spacing between elements */
+	margin: auto; /* Optional: Add some spacing between elements */
 }
 
 	
@@ -3256,7 +3257,7 @@ input, select, textarea {
 /* Styling for media elements (images, videos) */
 .carousel-item img, .carousel-item video {
 	max-width: 100%; /* Adjusted to fit the container width */
-	max-height: 300px;
+	height: 250px;
 	border-radius: 10px;
 }
 
